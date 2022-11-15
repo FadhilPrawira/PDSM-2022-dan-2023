@@ -1,4 +1,4 @@
-# Percobaan 3 Arduino
+# Percobaan 3 Arduino UNO
 1. Melakukan kedip LED dan meng-_output_-kan ke serial monitor
 2. Aritmatika sederhana pada serial monitor
 3. ADC dan sensor LDR
