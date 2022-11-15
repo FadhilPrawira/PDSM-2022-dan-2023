@@ -30,12 +30,12 @@ Dosen pengampu : Ir. Sudjadi M.T. dengan NIP 195906191985111001
   7. Sensor jarak HC-04
 
 ## Perangkat lunak yang dibutuhkan
-- CodeVision AVR
-- M-IDE Studio for MCS-51
-- Arduino
+- CodeVision AVR [unduh versi bajakan 3.14 untuk Windows 7/8/8.1/10 arsitektur 32/64 bit di sini](https://getintopc.com/softwares/development/codevisionavr-advanced-free-download/)
+- M-IDE Studio for MCS-51 [unduh versi 0.2.5.18 _packed file_ di sini](http://www.opcube.com/software/midepack02518.exe)
+- Arduino [unduh versi 2.0.1 di sini untuk Windows 10 arsitektur 64 bit](https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.1_Windows_64bit.exe)
 - Putty/SdjTerm
-- ProgISP
-- Proteus
+- ProgISP 
+- Proteus [unduh versi bajakan 8.13 SP0 untuk Windows 7/8/8.1/10 arsitektur 32/64 bit di sini](https://getintopc.com/softwares/pcb-design/proteus-professional-2021-free-download-5219458/)
 
 ## Kode-kode ini disusun bersama oleh para asisten praktikum berikut
 1. Assiddiq Mukhlis Abdillah 21060119130058
