@@ -4,7 +4,7 @@
 
 Dosen pengampu : Ir. Sudjadi M.T. dengan NIP 195906191985111001 
 ## Praktikum yang dijalankan
-- AT89C51/AT89C52 (Assembly)
+- AT89S51/AT89S52 (Assembly)
   1. Melakukan kedip LED dan meng-_output_-kan ke serial monitor
   2. _External interrupt_ berupa _push button_ kemudian di-_output_-kan ke LED, LED 7-Segment, dan serial monitor 
   3. Input, Debouncing Input, Output mode BIT
@@ -20,7 +20,7 @@ Dosen pengampu : Ir. Sudjadi M.T. dengan NIP 195906191985111001
   4. ADC dan PWM
   5. _External interrupt_ berupa sensor temperatur LM35 kemudian di-_output_-kan ke serial monitor
   
-- Arduino UNO (C/Wiring)
+- Arduino UNO/ATmega328P (C/Wiring)
   1. Melakukan kedip LED dan meng-_output_-kan ke serial monitor
   2. Aritmatika sederhana pada serial monitor
   3. ADC dan sensor LDR 
