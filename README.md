@@ -38,26 +38,44 @@ Dosen pengampu : Ir. Sudjadi M.T. dengan NIP 195906191985111001
 - Proteus [unduh versi bajakan 8.13 SP0 untuk Windows 7/8/8.1/10 arsitektur 32/64 bit di sini](https://getintopc.com/softwares/pcb-design/proteus-professional-2021-free-download-5219458/)
 
 ## Alat dan Bahan
-1. AT89S51/AT89S52
-2. ATMEGA8535
-3. Arduino UNO
-4. LED warna merah, kuning, hijau
-5. LED RGB
-6. Resistor berbagai ukuran
-7. Sensor suhu LM35
-8. Transistor NPN 2N222
+1. Arduino UNO
+![Arduino UNO](/images/arduino%20uno.png)
+2. Modul I/O _shield_ dengan konektor IDC ICSP 10 pin
+![Modul I/O _shield dengan konektor IDC ICSP 10 pin](/images/m00%20io%20shield.jpg)
+
+![Rangkaian modul I/O _shield_](/images/m00%20rangkaian%20io%20shield.jpg)
+3. Modul ATMEGA8535 (kiri) dan AT89S51/AT89S52 (kanan)
+![Modul ATMEGA8535 (kiri) dan AT89S51/AT89S52 (kanan)](/images/m01%20foto%20modul%20mikrokontroler.jpg)
+
+![](/images/m01%20rangkaian%20at8535%20modul%20mikrokontroler.jpg)
+
+![](/images/m01%20rangkaian%20at89s51%20modul%20mikrokontroler.jpg)
+4. Modul _push button_
+![Modul _push button_](/images/m02%20foto%20modul%20push%20button.jpg)
+5. Modul LCD 16x2
+![Modul LCD 16x2](/images/m03%20foto%20modul%20lcd.jpg)
+6. Modul PWM bohlam (kiri atas) dan LED RGB (kanan atas)
+![Modul PWM bohlam (kiri atas) dan LED RGB (kanan atas)](/images/m04%20foto%20modul%20pwm.jpg)
+7. Modul Potensiometer (kiri atas), LDR _dark_ (tengah atas), LDR _bright_ (kanan atas), dan sensor suhu LM35 (bawah)
+![Modul Potensiometer (kiri atas), LDR _dark_ (tengah atas), LDR _bright_ (kanan atas), dan sensor suhu LM35 (bawah)](/images/m05%20foto%20modul%20input%20analog.jpg)
+8. Modul LED _active low_ (kiri atas), LED 7 _segment active low_ (kanan atas), LED _active high_ (kiri bawah), dan LED 7 _segment active high_
+![Modul LED _active low_ (kiri atas), LED 7 _segment active low_ (kanan atas), LED _active high_ (kiri bawah), dan LED 7 _segment active high_](/images/m06%20modul%20led%20dan%207%20segment.jpg)
 9. USBasp AVR Programmer
+![USBasp AVR _Programmer_](/images/usbasp.jpg)
 10. Kabel DuPont _male to male_, _female to female_, dan _male to female_
-11. Kabel konektor IDC ICSP 10 pin
-12. USB to TTL
-13. LDR _dark_ dan _bright_
-14. Modul LCD 16x2
+![Kabel DuPont _male to male_, _female to female_, dan _male to female_](/images/kabel%20jumper.png)
+11. Kabel konektor IDC ICSP 10 pin _female to female_
+![Kabel konektor IDC ICSP 10 pin _female to female_](/images/kabel%20pita%2010%20plus%20female%20header.png)
+12. USB _to_ TTL
+![USB _to_ TTL](/images/usb%20to%20serial.png)
+13. _Breadboard_
+![_Breadboard_](/images/bread%20board.png)
+14. Resistor berbagai ukuran
 15. _Keypad matrix_ 4x4
 16. Motor servo
-17. Modul _push button_
-18. Modul LED 7 _segment active high_ dan _active low_
-19. Modul I/O _shield_ dengan port IDC ICSP 10 pin
-20. Power supply DC 12V
+17. LED warna merah, kuning, hijau
+18. Transistor NPN 2N222
+19. Power supply DC 12V
 
 ## Kode-kode ini disusun bersama oleh para asisten praktikum berikut
 1. Assiddiq Mukhlis Abdillah 21060119130058
