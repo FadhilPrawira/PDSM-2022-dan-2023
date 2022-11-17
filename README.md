@@ -32,9 +32,9 @@ Dosen pengampu : Ir. Sudjadi M.T. dengan NIP 195906191985111001
 ## Perangkat lunak yang dibutuhkan
 - CodeVision AVR [unduh versi bajakan 3.14 untuk Windows 7/8/8.1/10 arsitektur 32/64 bit di sini](https://getintopc.com/softwares/development/codevisionavr-advanced-free-download/)
 - M-IDE Studio for MCS-51 [unduh versi 0.2.5.18 _packed file_ di sini](http://www.opcube.com/software/midepack02518.exe)
-- Arduino [unduh versi 2.0.1 di sini untuk Windows 10 arsitektur 64 bit](https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.1_Windows_64bit.exe)
-- Putty/SdjTerm
-- ProgISP 
+- Arduino IDE [unduh versi 2.0.1 di sini untuk Windows 10 arsitektur 64 bit](https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.1_Windows_64bit.exe)
+- Putty [unduh Putty untuk Windows arsitektur 64 bit x86 di sini](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.78-installer.msi) / SdjTerm [unduh SdjTerm di sini](https://github.com/FadhilPrawira/PDSM-2022/blob/main/assets/software/SdjTerm.zip) / RealTerm [unduh RealTerm di sini](https://sourceforge.net/projects/realterm/files/Realterm/)
+- ProgISP [unduh versi 1.7.2 di sini](https://github.com/FadhilPrawira/PDSM-2022/blob/main/assets/software/Prog%20ISP%201.72.zip)
 - Proteus [unduh versi bajakan 8.13 SP0 untuk Windows 7/8/8.1/10 arsitektur 32/64 bit di sini](https://getintopc.com/softwares/pcb-design/proteus-professional-2021-free-download-5219458/)
 
 ## Alat dan Bahan
