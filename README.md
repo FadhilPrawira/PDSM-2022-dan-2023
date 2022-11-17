@@ -39,37 +39,95 @@ Dosen pengampu : Ir. Sudjadi M.T. dengan NIP 195906191985111001
 
 ## Alat dan Bahan
 1. Arduino UNO
-![Arduino UNO](/images/arduino%20uno.png)
+
+|![Arduino UNO](/assets/images/arduino%20uno.png)|
+|:--:|
+|**Gambar 1. Arduino UNO**|
+
 2. Modul I/O _shield_ dengan konektor IDC ICSP 10 pin
-![Modul I/O _shield dengan konektor IDC ICSP 10 pin](/images/m00%20io%20shield.jpg)
 
-![Rangkaian modul I/O _shield_](/images/m00%20rangkaian%20io%20shield.jpg)
+|![Modul I/O shield](/assets/images/m00%20io%20shield.jpg)|
+|:--:|
+|**Gambar 2. Modul I/O _shield_**|
+
+|![Rangkaian modul I/O shield](/assets/images/m00%20rangkaian%20io%20shield.jpg)|
+|:--:|
+|**Gambar 3. Rangkaian modul I/O _shield_**|
+
 3. Modul ATMEGA8535 (kiri) dan AT89S51/AT89S52 (kanan)
-![Modul ATMEGA8535 (kiri) dan AT89S51/AT89S52 (kanan)](/images/m01%20foto%20modul%20mikrokontroler.jpg)
 
-![](/images/m01%20rangkaian%20at8535%20modul%20mikrokontroler.jpg)
+|![Modul ATMEGA8535 (kiri) dan AT89S51/AT89S52 (kanan)](/assets/images/m01%20foto%20modul%20mikrokontroler.jpg)|
+|:--:|
+|**Gambar 4. Modul ATMEGA8535 (kiri) dan AT89S51/AT89S52 (kanan)**|
 
-![](/images/m01%20rangkaian%20at89s51%20modul%20mikrokontroler.jpg)
+|![Rangkaian modul ATMEGA8535](/assets/images/m01%20rangkaian%20at8535%20modul%20mikrokontroler.jpg)|
+|:--:|
+|**Gambar 5. Rangkaian modul ATMEGA8535**|
+
+|![Rangkaian modul AT89S51](/assets/images/m01%20rangkaian%20at89s51%20modul%20mikrokontroler.jpg)|
+|:--:|
+|**Gambar 6. Rangkaian modul AT89S51**|
+
 4. Modul _push button_
-![Modul _push button_](/images/m02%20foto%20modul%20push%20button.jpg)
+
+|![Modul push button](/assets/images/m02%20foto%20modul%20push%20button.jpg)|
+|:--:|
+|**Gambar 7. Modul _push button_**|
+
 5. Modul LCD 16x2
-![Modul LCD 16x2](/images/m03%20foto%20modul%20lcd.jpg)
+
+|![Modul LCD 16x2](/assets/images/m03%20foto%20modul%20lcd.jpg)|
+|:--:|
+|**Gambar 8. Modul LCD 16x2**|
+
 6. Modul PWM bohlam (kiri atas) dan LED RGB (kanan atas)
-![Modul PWM bohlam (kiri atas) dan LED RGB (kanan atas)](/images/m04%20foto%20modul%20pwm.jpg)
+
+|![Modul PWM bohlam (kiri atas) dan LED RGB (kanan atas)](/assets/images/m04%20foto%20modul%20pwm.jpg)|
+|:--:|
+|**Gambar 9. Modul PWM bohlam (kiri atas) dan LED RGB (kanan atas)**|
+
 7. Modul Potensiometer (kiri atas), LDR _dark_ (tengah atas), LDR _bright_ (kanan atas), dan sensor suhu LM35 (bawah)
-![Modul Potensiometer (kiri atas), LDR _dark_ (tengah atas), LDR _bright_ (kanan atas), dan sensor suhu LM35 (bawah)](/images/m05%20foto%20modul%20input%20analog.jpg)
+
+|![Modul Potensiometer (kiri atas), LDR dark (tengah atas), LDR bright (kanan atas), dan sensor suhu LM35 (bawah)](/assets/images/m05%20foto%20modul%20input%20analog.jpg)|
+|:--:|
+|**Gambar 10. Modul Potensiometer (kiri atas), LDR _dark_ (tengah atas), LDR _bright_ (kanan atas), dan sensor suhu LM35 (bawah)**|
+
 8. Modul LED _active low_ (kiri atas), LED 7 _segment active low_ (kanan atas), LED _active high_ (kiri bawah), dan LED 7 _segment active high_
-![Modul LED _active low_ (kiri atas), LED 7 _segment active low_ (kanan atas), LED _active high_ (kiri bawah), dan LED 7 _segment active high_](/images/m06%20modul%20led%20dan%207%20segment.jpg)
+
+|![Modul LED active low (kiri atas), LED 7 segment active low (kanan atas), LED active high (kiri bawah), dan LED 7 segment active high](/assets/images/m06%20modul%20led%20dan%207%20segment.jpg)|
+|:--:|
+|**Gambar 11. Modul LED _active low_ (kiri atas), LED 7 _segment active low_ (kanan atas), LED _active high_ (kiri bawah), dan LED 7 _segment active high_**|
+
 9. USBasp AVR Programmer
-![USBasp AVR _Programmer_](/images/usbasp.jpg)
+
+|![USBasp AVR Programmer](/assets/images/usbasp.jpg)|
+|:--:|
+|**Gambar 12. USBasp AVR _Programmer_**|
+
 10. Kabel DuPont _male to male_, _female to female_, dan _male to female_
-![Kabel DuPont _male to male_, _female to female_, dan _male to female_](/images/kabel%20jumper.png)
+
+|![Kabel DuPont male to male, female to female, dan male to female](/assets/images/kabel%20jumper.png)|
+|:--:|
+|**Gambar 13. Kabel DuPont _male to male_, _female to female_, dan _male to female_**|
+
 11. Kabel konektor IDC ICSP 10 pin _female to female_
-![Kabel konektor IDC ICSP 10 pin _female to female_](/images/kabel%20pita%2010%20plus%20female%20header.png)
+
+|![Kabel konektor IDC ICSP 10 pin female to female](/assets/images/kabel%20pita%2010%20plus%20female%20header.png)|
+|:--:|
+|**Gambar 14. Kabel konektor IDC ICSP 10 pin _female to female_**|
+
 12. USB _to_ TTL
-![USB _to_ TTL](/images/usb%20to%20serial.png)
+
+|![USB to TTL](/assets/images/usb%20to%20serial.png)|
+|:--:|
+|**Gambar 15. USB _to_ TTL**|
+
 13. _Breadboard_
-![_Breadboard_](/images/bread%20board.png)
+
+|![Breadboard](/assets/images/bread%20board.png)|
+|:--:|
+|**Gambar 16. _Breadboard_**|
+
 14. Resistor berbagai ukuran
 15. _Keypad matrix_ 4x4
 16. Motor servo
