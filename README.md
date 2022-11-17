@@ -1,8 +1,15 @@
 # Prak. Desain Sistem Mikroprosesor (PTEL6301) 
-> Teknik Elektro Universitas Diponegoro 
->> Tahun Ajaran 2022/2023
 
-Dosen pengampu : Ir. Sudjadi M.T. dengan NIP 195906191985111001 
+Dosen pengampu : Ir. Sudjadi M.T. 
+
+NIP : 195906191985111001 
+
+Laboratorium Elektronika
+
+Teknik Elektro Universitas Diponegoro 
+
+Tahun Ajaran 2022/2023
+
 ## Praktikum yang dijalankan
 - AT89S51/AT89S52 (Assembly)
   1. Melakukan kedip LED dan meng-_output_-kan ke serial monitor
