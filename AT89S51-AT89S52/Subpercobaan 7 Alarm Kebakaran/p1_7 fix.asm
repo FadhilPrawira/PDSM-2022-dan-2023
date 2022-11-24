@@ -1,5 +1,6 @@
 org 0000h
 	setb P0.1	;input LDR gelap
+	setb p3.0
 	mov P1,#0ffh	;membersihkan led com anode
 
 start:	jnb P0.1,loop 
@@ -9,7 +10,8 @@ loop:	mov P1,#0ffh
 	acall delay
 	mov P1,#000h
 	acall delay
-	sjmp start
+	jnb p3.0,start
+	sjmp loop
 delay:	mov R0,#01h
 delay0:	mov R1,#0f0h
 delay1: mov R2,#0F0h
