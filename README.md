@@ -149,7 +149,7 @@ Tahun Ajaran 2022/2023
 4. Muhammad Adib Ubaidillah 21060120120023
 5. Maulana Reyhan Savero 21060120120032
 6. Laila Himatul Khaizah  210601201200026
-7. Chandraning Dyah Hapsari 21060120120023
+7. Chandraning Dyah Hapsari 21060120140169
 8. Shifa Auliya Oktifyanindar 21060120140099
 9. Syahvan Alviansyah Diva Ritonga 21060120130130
 10. Selvya Syalsabilla 21060120140187
