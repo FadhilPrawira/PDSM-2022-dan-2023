@@ -12,6 +12,12 @@
 #define ROW_NUM    4  // four rows
 #define COLUMN_NUM 4  // four columns
 #define LED 12
+
+// buzzer
+// kabel hitam sambung ke ground breadboard/arduino
+// kabel merah sambung ke NO (normally open->bagian kiri relay/simbol terbuka) relay
+// VCC/5V sambung ke tengah relay
+
 char keys[ROW_NUM][COLUMN_NUM] = {
   {'1', '2', '3', 'A'},
   {'4', '5', '6', 'B'},
@@ -47,11 +53,11 @@ void loop() {
     } else if (key == '#') {
       if (input_password == password_1 || input_password == password_2 || input_password == password_3) {
         Serial.println("The password is correct, turning ON relay");
-        digitalWrite(RELAY_PIN, LOW);\
+        digitalWrite(RELAY_PIN, LOW); // pass bener, NO nyala, NC mati
         digitalWrite(LED,HIGH);
       } else {
         Serial.println("The password is incorrect, try again");
-        digitalWrite(RELAY_PIN,HIGH);
+        digitalWrite(RELAY_PIN,HIGH); // pass salah, NO mati, NC nyala
         digitalWrite(LED,LOW);
       }
 
