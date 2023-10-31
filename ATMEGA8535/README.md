@@ -8,7 +8,8 @@
 # Instalasi driver USBasp
 Sumber: [Instructables - USBASP Installation in Windows 10](https://www.instructables.com/USBASP-Installation-in-Windows-10/)
 Langkah-langkah
-1. Download Zadig di link [berikut](https://github.com/pbatard/libwdi/releases/download/v1.5.0/zadig-2.8.exe)
+1. Download Zadig di link [berikut](https://github.com/pbatard/libwdi/releases/download/v1.5.0/zadig-2.8.exe).
 2. Buka Zadig, klik ```Option``` dan centang ```List All your Devices```. Ini akan menunjukkan semua perangkat yang terhubung ke PC/Laptop Anda.
-3. Klik dropdown box di tengah dan pilih ```USBasp```. Jangan pilih perangkat selain USBasp. Salah memilih perangkat dapat menyebabkan perangkat tersebut tidak bisa digunakan.
-4. Ubah driver menjadi ```libusb-win32 (v1.2.7.3)```. Klik ```Reinstall Driver``` atau ```Replace Driver``` atau ```Upgrade Driver```.
+3. Hubungkan perangkat USBasp ke PC/Laptop Anda.
+4. Klik dropdown box di tengah dan pilih ```USBasp```. Jangan pilih perangkat selain USBasp. Salah memilih perangkat dapat menyebabkan perangkat tersebut tidak bisa digunakan.
+5. Ubah driver menjadi ```libusb-win32 (v1.2.7.3)```. Klik ```Reinstall Driver``` atau ```Replace Driver``` atau ```Upgrade Driver```.
