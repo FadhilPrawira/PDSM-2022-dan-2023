@@ -35,8 +35,6 @@ Data Stack size         : 128
 
 void lampMerah()
 {
-
-
 // merah
 PORTA.5 = 1; // blue
 PORTA.6 = 1; // green
@@ -59,7 +57,6 @@ PORTA.5 = 1; //blue
 PORTA.6 = 0; //green
 PORTA.7 = 1; //red
 delay_ms(100);
-
 }
 
 void lampMati()
@@ -70,6 +67,8 @@ PORTA.6 = 1; //green
 PORTA.7 = 1; //red
 delay_ms(100);
 }
+
+
 void main(void)
 {
 // Declare your local variables here
