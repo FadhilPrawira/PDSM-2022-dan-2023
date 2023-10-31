@@ -8,7 +8,8 @@ Laboratorium Elektronika
 
 Teknik Elektro Universitas Diponegoro 
 
-Tahun Ajaran 2022/2023
+Tahun Ajaran 2022/2023 (Agustus 2022-Desember 2022)
+Tahun Ajaran 2023/2024 (Agustus 2023-Desember 2024)
 
 ## Praktikum yang dijalankan
 - AT89S51/AT89S52 (Assembly)
@@ -143,6 +144,7 @@ Tahun Ajaran 2022/2023
 19. Power supply DC 12V
 
 ## Kode-kode ini disusun bersama oleh para asisten praktikum berikut
+### Tahun 2022
 1. Assiddiq Mukhlis Abdillah 21060119130058
 2. Fadhil Prawira 21060120140057
 3. Arya Bramaputra 21060120120033
@@ -155,3 +157,14 @@ Tahun Ajaran 2022/2023
 10. Selvya Syalsabilla 21060120140187
 11. Rizkar Al Akbar 21060120130125
 12. Hafiz Alifian Aqsha 21060120130104
+
+### Tahun 2023
+1. Fadhil Prawira 21060120140057
+2. Arya Bramaputra 21060120120033
+3. Ratu Sondang Elishabet Sidauruk 21060120120036
+4. Thoha Khoirul Arham 21060120130095
+5. Karren Noorlita Emily 21060121140192
+6. Devi Indah Retnani 21060121140123
+7. Muhammad Raihan Arrafi 21060121120011
+8. Iqbal Maulana Ramadhan 21060121120025
+9. Kesya Mesya Arga Nauli Torromora Sitompul 21060121140127
