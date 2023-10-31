@@ -27,61 +27,49 @@ Data Stack size         : 128
 
 
 // Declare your global variables here
-void lamp1()
+
+
+// blue = 0C0
+// green = 0C1A
+// red = 0C1B
+
+void lampMerah()
 {
-PORTA.5 = 0; //red
-PORTA.6 = 1; //blue
-PORTA.7 = 0; //green
+
+
+// merah
+PORTA.5 = 1; // blue
+PORTA.6 = 1; // green
+PORTA.7 = 0; // red
 delay_ms(100);
-
-PORTA.5 = 1; //blue
-PORTA.7 = 0; //green
-delay_ms(1000);
-
-PORTA.7 = 0;
-PORTA.5 = 0;
-delay_ms(100);
-
-PORTA.7 = 1;
-PORTA.5 = 0;
 }
 
-/*void lamp2()
+void lampKuning()
 {
-PORTC.0 = 0;
-PORTC.1 = 1;
+// kuning 
+PORTA.5 = 0; //blue
+PORTA.6 = 0; //green
+PORTA.7 = 0; //red
 delay_ms(100);
-
-PORTC.1 = 0;
-PORTC.2 = 1;
-delay_ms(1500);
-
-PORTC.2 = 0;
-PORTC.1 = 1;
-delay_ms(100);
-
-PORTC.1 = 0;
-PORTC.0 = 1;
-}*/
-
-/*void lamp3()
+}
+void lampHijau()
 {
-PORTC.5 = 0;
-PORTC.6 = 1;
+// hijau 
+PORTA.5 = 1; //blue
+PORTA.6 = 0; //green
+PORTA.7 = 1; //red
 delay_ms(100);
 
-PORTC.6 = 0;
-PORTC.7 = 1;
-delay_ms(2000);
+}
 
-PORTC.7 = 0;
-PORTC.6 = 1;
+void lampMati()
+{
+ // mati semua
+PORTA.5 = 1; //blue
+PORTA.6 = 1; //green
+PORTA.7 = 1; //red
 delay_ms(100);
-
-PORTC.6 = 0;
-PORTC.5 = 1;
-}*/
-
+}
 void main(void)
 {
 // Declare your local variables here
@@ -188,33 +176,11 @@ SPCR=(0<<SPIE) | (0<<SPE) | (0<<DORD) | (0<<MSTR) | (0<<CPOL) | (0<<CPHA) | (0<<
 // TWI disabled
 TWCR=(0<<TWEA) | (0<<TWSTA) | (0<<TWSTO) | (0<<TWEN) | (0<<TWIE);
 
-while (1)
-      {
-      // Place your code here
-      if(PINA.0 == 0)
-      {
-      PORTA.5 = 1;
-      PORTC.0 = 1;
-      PORTC.5 = 1;
-      delay_ms(100);
-      lamp1();
-      delay_ms(100);
-      //lamp2();
-      //delay_ms(100);
-      //lamp3();
-      //delay_ms(100);
-      }
-      if(PINA.0 == 1)
-      {
-      PORTA.6 = 0;
-      PORTC.1 = 1;
-      PORTC.6 = 1;
-      delay_ms(50);
-      
-      PORTA.6 = 1;
-      PORTC.1 = 0;
-      PORTC.6 = 0;
-      delay_ms(50);
-      }
-}
+    while (1){
+          // Place your code here
+          lampMati();
+          lampMerah();
+          lampKuning();
+          lampHijau();
+          }  
 }
