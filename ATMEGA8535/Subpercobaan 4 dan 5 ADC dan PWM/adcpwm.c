@@ -181,9 +181,17 @@ lcd_puts("Nilai ADC");
 while (1)
       {
       // Place your code here
-      lcd_gotoxy(0,1);
-      value =read_adc(0); //(1) untuk Gelap, (2) untuk terang, (3) untuk LM35
+      lcd_gotoxy(0,1);  
+      
+      // Ubah angkanya    
+      //(0) untuk Potensiometer. (1) untuk LDR Gelap. (2) untuk LDR Terang. (3) untuk LM35
+      value =read_adc(0);
+      
+      // LDR Terang. Jika diterangi, maka nilainya mendekati 1023. Jika digelapi, maka nilainya mendekati 0
+      // LDR Gelap. Jika diterangi, maka nilainya mendekati 0. Jika digelapi, maka nilainya mendekati 1023 
+      
       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
+      
       itoa(value,String);
       lcd_puts(String);
       lcd_puts(" ");

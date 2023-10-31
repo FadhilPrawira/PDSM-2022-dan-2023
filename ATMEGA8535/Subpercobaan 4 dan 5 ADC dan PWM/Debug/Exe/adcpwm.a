@@ -311,45 +311,53 @@
 ;PCODE: $00000070 VOL: 0
 ;PCODE: $00000071 VOL: 0
 ;PCODE: $00000072 VOL: 0
-; 0000 00B9       value =read_adc(0); //(1) untuk Gelap, (2) untuk terang, (3) untuk LM35
+; 0000 00B9 
+; 0000 00BA       // Ubah angkanya
+; 0000 00BB       //(0) untuk Potensiometer. (1) untuk LDR Gelap. (2) untuk LDR Terang. (3) untuk LM35
+; 0000 00BC       value =read_adc(0);
 ;PCODE: $00000073 VOL: 0
 ;PCODE: $00000074 VOL: 0
 ;PCODE: $00000075 VOL: 0
-; 0000 00BA       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
-; 0000 00BB       itoa(value,String);
+; 0000 00BD 
+; 0000 00BE       // LDR Terang. Jika diterangi, maka nilainya mendekati 1023. Jika digelapi, maka nilainya mendekati 0
+; 0000 00BF       // LDR Gelap. Jika diterangi, maka nilainya mendekati 0. Jika digelapi, maka nilainya mendekati 1023
+; 0000 00C0 
+; 0000 00C1       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
+; 0000 00C2 
+; 0000 00C3       itoa(value,String);
 ;PCODE: $00000076 VOL: 0
 ;PCODE: $00000077 VOL: 0
 ;PCODE: $00000078 VOL: 0
-; 0000 00BC       lcd_puts(String);
+; 0000 00C4       lcd_puts(String);
 ;PCODE: $00000079 VOL: 0
 ;PCODE: $0000007A VOL: 0
-; 0000 00BD       lcd_puts(" ");
+; 0000 00C5       lcd_puts(" ");
 ;PCODE: $0000007B VOL: 0
 ;PCODE: $0000007C VOL: 0
 ;PCODE: $0000007D VOL: 0
-; 0000 00BE 
-; 0000 00BF       //for(duty=0; duty<255; duty++)
-; 0000 00C0       //{
-; 0000 00C1         duty=value;
+; 0000 00C6 
+; 0000 00C7       //for(duty=0; duty<255; duty++)
+; 0000 00C8       //{
+; 0000 00C9         duty=value;
 ;PCODE: $0000007E VOL: 0
 ;PCODE: $0000007F VOL: 0
-; 0000 00C2         OCR0=duty;
+; 0000 00CA         OCR0=duty;
 ;PCODE: $00000080 VOL: 0
 ;PCODE: $00000081 VOL: 0
-; 0000 00C3         delay_ms(8);
+; 0000 00CB         delay_ms(8);
 ;PCODE: $00000082 VOL: 0
 ;PCODE: $00000083 VOL: 0
 ;PCODE: $00000084 VOL: 0
-; 0000 00C4       //}
-; 0000 00C5       /*for(duty=255; duty>1; duty--)
-; 0000 00C6       {
-; 0000 00C7         OCR0=duty;
-; 0000 00C8         delay_ms(8);
-; 0000 00C9       } */
-; 0000 00CA       }
+; 0000 00CC       //}
+; 0000 00CD       /*for(duty=255; duty>1; duty--)
+; 0000 00CE       {
+; 0000 00CF         OCR0=duty;
+; 0000 00D0         delay_ms(8);
+; 0000 00D1       } */
+; 0000 00D2       }
 ;PCODE: $00000085 VOL: 0
 ;PCODE: $00000086 VOL: 0
-; 0000 00CB }
+; 0000 00D3 }
 ;PCODE: $00000087 VOL: 0
 ;PCODE: $00000088 VOL: 0
 ;PCODE: $00000089 VOL: 0

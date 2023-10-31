@@ -1,5 +1,5 @@
 
-;CodeVisionAVR C Compiler V3.12 Advanced
+;CodeVisionAVR C Compiler V3.14 Advanced
 ;(C) Copyright 1998-2014 Pavel Haiduc, HP InfoTech s.r.l.
 ;http://www.hpinfotech.com
 
@@ -1500,43 +1500,51 @@ _0x7:
 	ST   -Y,R30
 	LDI  R26,LOW(1)
 	RCALL _lcd_gotoxy
-; 0000 00B9       value =read_adc(0); //(1) untuk Gelap, (2) untuk terang, (3) untuk LM35
+; 0000 00B9 
+; 0000 00BA       // Ubah angkanya
+; 0000 00BB       //(0) untuk Potensiometer. (1) untuk LDR Gelap. (2) untuk LDR Terang. (3) untuk LM35
+; 0000 00BC       value =read_adc(0);
 	LDI  R26,LOW(0)
 	RCALL _read_adc
 	MOVW R4,R30
-; 0000 00BA       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
-; 0000 00BB       itoa(value,String);
+; 0000 00BD 
+; 0000 00BE       // LDR Terang. Jika diterangi, maka nilainya mendekati 1023. Jika digelapi, maka nilainya mendekati 0
+; 0000 00BF       // LDR Gelap. Jika diterangi, maka nilainya mendekati 0. Jika digelapi, maka nilainya mendekati 1023
+; 0000 00C0 
+; 0000 00C1       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
+; 0000 00C2 
+; 0000 00C3       itoa(value,String);
 	ST   -Y,R5
 	ST   -Y,R4
 	LDI  R26,LOW(_String)
 	LDI  R27,HIGH(_String)
 	RCALL _itoa
-; 0000 00BC       lcd_puts(String);
+; 0000 00C4       lcd_puts(String);
 	LDI  R26,LOW(_String)
 	LDI  R27,HIGH(_String)
 	RCALL _lcd_puts
-; 0000 00BD       lcd_puts(" ");
+; 0000 00C5       lcd_puts(" ");
 	__POINTW2MN _0x6,10
 	RCALL _lcd_puts
-; 0000 00BE 
-; 0000 00BF       //for(duty=0; duty<255; duty++)
-; 0000 00C0       //{
-; 0000 00C1         duty=value;
+; 0000 00C6 
+; 0000 00C7       //for(duty=0; duty<255; duty++)
+; 0000 00C8       //{
+; 0000 00C9         duty=value;
 	MOV  R7,R4
-; 0000 00C2         OCR0=duty;
+; 0000 00CA         OCR0=duty;
 	OUT  0x3C,R7
-; 0000 00C3         delay_ms(8);
+; 0000 00CB         delay_ms(8);
 	LDI  R26,LOW(8)
 	RCALL SUBOPT_0x0
-; 0000 00C4       //}
-; 0000 00C5       /*for(duty=255; duty>1; duty--)
-; 0000 00C6       {
-; 0000 00C7         OCR0=duty;
-; 0000 00C8         delay_ms(8);
-; 0000 00C9       } */
-; 0000 00CA       }
+; 0000 00CC       //}
+; 0000 00CD       /*for(duty=255; duty>1; duty--)
+; 0000 00CE       {
+; 0000 00CF         OCR0=duty;
+; 0000 00D0         delay_ms(8);
+; 0000 00D1       } */
+; 0000 00D2       }
 	RJMP _0x7
-; 0000 00CB }
+; 0000 00D3 }
 _0xA:
 	RJMP _0xA
 ; .FEND
@@ -1823,8 +1831,8 @@ _delay_ms:
 	adiw r26,0
 	breq __delay_ms1
 __delay_ms0:
-	__DELAY_USW 0xFA0
 	wdr
+	__DELAY_USW 0xFA0
 	sbiw r26,1
 	brne __delay_ms0
 __delay_ms1:

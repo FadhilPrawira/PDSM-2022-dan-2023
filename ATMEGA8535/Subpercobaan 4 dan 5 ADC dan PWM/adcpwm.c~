@@ -182,7 +182,9 @@ while (1)
       {
       // Place your code here
       lcd_gotoxy(0,1);
-      value =read_adc(0); //(1) untuk Gelap, (2) untuk terang, (3) untuk LM35
+      value =read_adc(3); //(0) untuk Potensiometer. (1) untuk LDR Gelap. (2) untuk LDR Terang. (3) untuk LM35
+      // LDR Terang. Jika diterangi, maka nilainya mendekati 1023. Jika digelapi, maka nilainya mendekati 0
+      // LDR Gelap. Jika diterangi, maka nilainya mendekati 0. Jika digelapi, maka nilainya mendekati 1023 
       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
       itoa(value,String);
       lcd_puts(String);
@@ -190,7 +192,7 @@ while (1)
       
       //for(duty=0; duty<255; duty++)
       //{        
-        duty=value*255/1023;
+        duty=value;
         OCR0=duty;
         delay_ms(8);
       //}             

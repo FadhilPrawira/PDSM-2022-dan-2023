@@ -1,15 +1,15 @@
 
-AVRASM ver. 2.1.30  D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm Tue Nov 01 09:58:29 2022
+AVRASM ver. 2.1.30  C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm Tue Oct 31 13:40:37 2023
 
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1086): warning: Register r4 already defined by the .DEF directive
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1087): warning: Register r5 already defined by the .DEF directive
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1088): warning: Register r7 already defined by the .DEF directive
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1089): warning: Register r6 already defined by the .DEF directive
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1090): warning: Register r9 already defined by the .DEF directive
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1091): warning: Register r8 already defined by the .DEF directive
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1086): warning: Register r4 already defined by the .DEF directive
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1087): warning: Register r5 already defined by the .DEF directive
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1088): warning: Register r7 already defined by the .DEF directive
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1089): warning: Register r6 already defined by the .DEF directive
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1090): warning: Register r9 already defined by the .DEF directive
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1091): warning: Register r8 already defined by the .DEF directive
                  
                  
-                 ;CodeVisionAVR C Compiler V3.12 Advanced
+                 ;CodeVisionAVR C Compiler V3.14 Advanced
                  ;(C) Copyright 1998-2014 Pavel Haiduc, HP InfoTech s.r.l.
                  ;http://www.hpinfotech.com
                  
@@ -1149,14 +1149,14 @@ D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1091): warning: Register r8 al
 000022 0043
 000023 0020      	.DB  0x43,0x0,0x20,0x0
                  _0x2020060:
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1132): warning: .cseg .db misalignment - padding zero byte
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1132): warning: .cseg .db misalignment - padding zero byte
 000024 0001      	.DB  0x1
                  _0x2020000:
 000025 4e2d
 000026 4e41
 000027 4900
 000028 464e      	.DB  0x2D,0x4E,0x41,0x4E,0x0,0x49,0x4E,0x46
-D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1135): warning: .cseg .db misalignment - padding zero byte
+C:\Users\herma\Downloads\1pdsm8535\PDSM-2022\ATMEGA8535\Subpercobaan 4 dan 5 ADC dan PWM\Debug\List\adcpwm.asm(1135): warning: .cseg .db misalignment - padding zero byte
 000029 0000      	.DB  0x0
                  _0x2040003:
 00002a c080      	.DB  0x80,0xC0
@@ -1533,46 +1533,54 @@ D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1135): warning: .cseg .db misa
 0000a5 93ea      	ST   -Y,R30
 0000a6 e0a1      	LDI  R26,LOW(1)
 0000a7 d05d      	RCALL _lcd_gotoxy
-                 ; 0000 00B9       value =read_adc(0); //(1) untuk Gelap, (2) untuk terang, (3) untuk LM35
+                 ; 0000 00B9 
+                 ; 0000 00BA       // Ubah angkanya
+                 ; 0000 00BB       //(0) untuk Potensiometer. (1) untuk LDR Gelap. (2) untuk LDR Terang. (3) untuk LM35
+                 ; 0000 00BC       value =read_adc(0);
 0000a8 e0a0      	LDI  R26,LOW(0)
 0000a9 dfba      	RCALL _read_adc
 0000aa 012f      	MOVW R4,R30
-                 ; 0000 00BA       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
-                 ; 0000 00BB       itoa(value,String);
+                 ; 0000 00BD 
+                 ; 0000 00BE       // LDR Terang. Jika diterangi, maka nilainya mendekati 1023. Jika digelapi, maka nilainya mendekati 0
+                 ; 0000 00BF       // LDR Gelap. Jika diterangi, maka nilainya mendekati 0. Jika digelapi, maka nilainya mendekati 1023
+                 ; 0000 00C0 
+                 ; 0000 00C1       //value = read_adc(3)*150/308; //Untuk LM35 Suhu
+                 ; 0000 00C2 
+                 ; 0000 00C3       itoa(value,String);
 0000ab 925a      	ST   -Y,R5
 0000ac 924a      	ST   -Y,R4
 0000ad eeac      	LDI  R26,LOW(_String)
 0000ae e0b0      	LDI  R27,HIGH(_String)
 0000af d00c      	RCALL _itoa
-                 ; 0000 00BC       lcd_puts(String);
+                 ; 0000 00C4       lcd_puts(String);
 0000b0 eeac      	LDI  R26,LOW(_String)
 0000b1 e0b0      	LDI  R27,HIGH(_String)
 0000b2 d081      	RCALL _lcd_puts
-                 ; 0000 00BD       lcd_puts(" ");
+                 ; 0000 00C5       lcd_puts(" ");
                 +
 0000b3 eeaa     +LDI R26 , LOW ( _0x6 + ( 10 ) )
 0000b4 e0b0     +LDI R27 , HIGH ( _0x6 + ( 10 ) )
                  	__POINTW2MN _0x6,10
 0000b5 d07e      	RCALL _lcd_puts
-                 ; 0000 00BE 
-                 ; 0000 00BF       //for(duty=0; duty<255; duty++)
-                 ; 0000 00C0       //{
-                 ; 0000 00C1         duty=value;
+                 ; 0000 00C6 
+                 ; 0000 00C7       //for(duty=0; duty<255; duty++)
+                 ; 0000 00C8       //{
+                 ; 0000 00C9         duty=value;
 0000b6 2c74      	MOV  R7,R4
-                 ; 0000 00C2         OCR0=duty;
+                 ; 0000 00CA         OCR0=duty;
 0000b7 be7c      	OUT  0x3C,R7
-                 ; 0000 00C3         delay_ms(8);
+                 ; 0000 00CB         delay_ms(8);
 0000b8 e0a8      	LDI  R26,LOW(8)
 0000b9 d0b4      	RCALL SUBOPT_0x0
-                 ; 0000 00C4       //}
-                 ; 0000 00C5       /*for(duty=255; duty>1; duty--)
-                 ; 0000 00C6       {
-                 ; 0000 00C7         OCR0=duty;
-                 ; 0000 00C8         delay_ms(8);
-                 ; 0000 00C9       } */
-                 ; 0000 00CA       }
+                 ; 0000 00CC       //}
+                 ; 0000 00CD       /*for(duty=255; duty>1; duty--)
+                 ; 0000 00CE       {
+                 ; 0000 00CF         OCR0=duty;
+                 ; 0000 00D0         delay_ms(8);
+                 ; 0000 00D1       } */
+                 ; 0000 00D2       }
 0000ba cfe9      	RJMP _0x7
-                 ; 0000 00CB }
+                 ; 0000 00D3 }
                  _0xA:
 0000bb cfff      	RJMP _0xA
                  ; .FEND
@@ -1868,14 +1876,14 @@ D:\Prak DSM\Prak AVR\adcpwm\Debug\List\adcpwm.asm(1135): warning: .cseg .db misa
 00017b 9610      	adiw r26,0
 00017c f039      	breq __delay_ms1
                  __delay_ms0:
+00017d 95a8      	wdr
                 +
-00017d ea80     +LDI R24 , LOW ( 0xFA0 )
-00017e e09f     +LDI R25 , HIGH ( 0xFA0 )
+00017e ea80     +LDI R24 , LOW ( 0xFA0 )
+00017f e09f     +LDI R25 , HIGH ( 0xFA0 )
                 +__DELAY_USW_LOOP :
-00017f 9701     +SBIW R24 , 1
-000180 f7f1     +BRNE __DELAY_USW_LOOP
+000180 9701     +SBIW R24 , 1
+000181 f7f1     +BRNE __DELAY_USW_LOOP
                  	__DELAY_USW 0xFA0
-000181 95a8      	wdr
 000182 9711      	sbiw r26,1
 000183 f7c9      	brne __delay_ms0
                  __delay_ms1:
