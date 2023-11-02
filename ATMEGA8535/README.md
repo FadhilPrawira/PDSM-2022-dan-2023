@@ -7,6 +7,7 @@
 
 # Instalasi driver USBasp
 Sumber: [Instructables - USBASP Installation in Windows 10](https://www.instructables.com/USBASP-Installation-in-Windows-10/)
+
 Langkah-langkah
 1. Download Zadig di link [berikut](https://github.com/pbatard/libwdi/releases/download/v1.5.0/zadig-2.8.exe).
 2. Buka Zadig, klik ```Option``` dan centang ```List All your Devices```. Ini akan menunjukkan semua perangkat yang terhubung ke PC/Laptop Anda.
