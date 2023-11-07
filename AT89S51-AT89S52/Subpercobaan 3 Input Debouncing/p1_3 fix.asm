@@ -4,18 +4,18 @@ Mov p1,#0ffh  ;mematikan common anode led (1=off, 0=on)
 Mov p0,#000h  ;mematikan buzzer
 
 start:
-Jnb p3.2,loop  ;jump if not bit. Jika p3.2 bernilai 0, lompat ke loop. Switch pull-up, idle=1, push=0
-Mov p1,#0ffh  ;matiin led
-Mov p0,#000h  ;matiin buzz
-Sjmp start
+	Jnb p3.2,loop  ;jump if not bit. Jika p3.2 bernilai 0, lompat ke loop. Switch pull-up, idle=1, push=0
+	Mov p1,#0ffh  ;matiin led
+	Mov p0,#000h  ;matiin buzz
+	Sjmp start
 
 loop:
-mov p1,#0fdh
-mov p0,#001h
-;Setb p1.1  ;nyalain led bit ke-x
-Setb p0.0  ;nyalain buzzer di bit ke-x
-Acall delay
-sjmp start
+	mov p1,#0fdh
+	mov p0,#001h
+	;Setb p1.1  ;nyalain led bit ke-x
+	Setb p0.0  ;nyalain buzzer di bit ke-x
+	Acall delay
+	sjmp start
 
 delay:	mov R0,#01h
 delay0:	mov R1,#0ffh
