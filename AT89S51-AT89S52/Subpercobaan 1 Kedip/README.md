@@ -20,7 +20,7 @@
 |Modul _Push Button_|Port A/0|
 |Modul LED (_Active Low_)|Port B/1|
 
-|![Arduino UNO](/assets/images/AT89S51-AT89S52/P1.jpg)|
+|![Percobaan 1 Mikrokontroler AT89S51/AT89S52](/assets/images/AT89S51-AT89S52/P1.jpg)|
 |:--:|
 |**Gambar 1. Percobaan 1 Mikrokontroler AT89S51/AT89S52**|
 
