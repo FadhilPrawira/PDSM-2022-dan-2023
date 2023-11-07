@@ -20,6 +20,10 @@
 |Modul _Push Button_|Port A/0|
 |Modul LED (_Active Low_)|Port B/1|
 
+|![Arduino UNO](/assets/images/AT89S51-AT89S52/P1.jpg)|
+|:--:|
+|**Gambar 1. Percobaan 1 Mikrokontroler AT89S51/AT89S52 **|
+
 3. Buka ProgISP, pastikan _chip_ yang dipilih adalah AT89S51/AT89S52. Klik ```RD``` untuk memastikan AT89S51/AT89S52 sudah tersambung dengan ProgISP.
 4. Jika tampil notifikasi ```Chip Signature doesn't match```, maka kemungkinan salah tipe _chip_. Ganti ke _chip_ yang sesuai.
 5. Klik ```File>Load Flash```, cari folder ```AT89S51-AT89S52\Subpercobaan 1 Kedip``` dan pilih ```p1_1_fix.hex```
