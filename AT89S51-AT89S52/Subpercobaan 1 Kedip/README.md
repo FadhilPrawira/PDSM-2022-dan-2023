@@ -1,4 +1,4 @@
-# Mekanisme Praktikum Percobaan 1 Mikrokontroler AT89S51/AT89S52
+# Mekanisme Percobaan 1 Mikrokontroler AT89S51/AT89S52
 ## Alat yang dibutuhkan
 1. Modul Mikrokontroler AT89S51/AT89S52
 2. Modul I/O _shield_
@@ -22,7 +22,7 @@
 
 |![Arduino UNO](/assets/images/AT89S51-AT89S52/P1.jpg)|
 |:--:|
-|**Gambar 1. Percobaan 1 Mikrokontroler AT89S51/AT89S52 **|
+|**Gambar 1. Percobaan 1 Mikrokontroler AT89S51/AT89S52**|
 
 3. Buka ProgISP, pastikan _chip_ yang dipilih adalah AT89S51/AT89S52. Klik ```RD``` untuk memastikan AT89S51/AT89S52 sudah tersambung dengan ProgISP.
 4. Jika tampil notifikasi ```Chip Signature doesn't match```, maka kemungkinan salah tipe _chip_. Ganti ke _chip_ yang sesuai.
