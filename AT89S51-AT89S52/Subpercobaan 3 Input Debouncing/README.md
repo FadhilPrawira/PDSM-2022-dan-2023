@@ -4,7 +4,7 @@
 2. Modul I/O _shield_
 3. Modul _Push Button_
 4. Modul LED dan 7 _Segment_
-5. Kabel konektor IDC ICSP 10 pin _female to female_
+5. 3 buah Kabel konektor IDC ICSP 10 pin _female to female_
 6. USBasp
 
 ## Software yang dibutuhkan

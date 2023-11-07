@@ -15,7 +15,7 @@ start:
 	Jnb p3.2,loop  ;jump if not bit. Jika p3.2 bernilai 0, lompat ke loop. Switch pull-up, idle=1, push=0
 	Mov p1,#11111111b  ;matikan LED ACTIVE LOW
 	Mov p0,#11111111b  ;matiin buzzer PNP 
-	Sjmp start ; jika perintah (Sjmp start) selesai, kembali ke program/function start (seperti while looping)
+	Sjmp start ; jika perintah (Mov p0,#11111111b) selesai, kembali ke program/function start (seperti while looping)
 
 loop:
 ;IF P3.2 dipencet, maka Buzzer nyala (dengan syarat transistor PNP)
@@ -34,7 +34,7 @@ loop:
 ; kondisi tertentu
 ;
 ;--------------------------------------------------------------------------
-; berapa lama? sekitar 255 kali x 255 kali= 65025 ms = 65,025 detik
+; berapa lama? sekitar 1 kali x 255 kali x 255 kali= 65.025 mikrosekon = 65,025 milisekon = 0,065025 detik
 delay:	mov R0,#01h	; Isi Register R0 dengan 1 (1x ulang)
 delay0:	mov R1,#0ffh	; Isi Register R1 dengan 255 (255x ulang)
 delay1: mov R2, #0ffh	; Isi Register R2 dengan 255 (255x ulang)
