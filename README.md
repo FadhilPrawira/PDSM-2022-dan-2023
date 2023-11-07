@@ -11,6 +11,13 @@ Teknik Elektro Universitas Diponegoro
 Tahun Ajaran 2022/2023 (Agustus 2022-Desember 2022)
 Tahun Ajaran 2023/2024 (Agustus 2023-Desember 2024)
 
+## TODO
+[] Perbaiki kode praktikum agar sesuai petunjuk praktikum [unduh petunjuk praktikum di sini](https://github.com/FadhilPrawira/PDSM-2022/blob/main/assets/document/petunjuk praktikum 20220915.docx)
+[] Perbaiki petunjuk praktikum agar mudah dipahami peserta. [Referensi](https://youtu.be/xAJcZeq-an0?si=gHEmx-m0uXeCGbuD)
+[] Buat format penilaian tiap praktikum
+[] Buat skema praktikum di Proteus
+[] Gunakan _software_ open source/gratis/tidak bajakan
+
 ## Praktikum yang dijalankan
 - AT89S51/AT89S52 (Assembly)
   1. Melakukan kedip LED dan meng-_output_-kan ke serial monitor
