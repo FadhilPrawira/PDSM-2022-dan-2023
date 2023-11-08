@@ -26,7 +26,7 @@
 2. Buka file ```arithmatika.asm``` di MIDE-51 Studio. Klik ```F9``` untuk _Build_.
 3. Buka ProgISP, pastikan _chip_ yang dipilih adalah AT89S51/AT89S52. Klik ```RD``` untuk memastikan AT89S51/AT89S52 sudah tersambung dengan ProgISP.
 4. Jika tampil notifikasi ```Chip Signature doesn't match```, maka kemungkinan salah tipe _chip_. Ganti ke _chip_ yang sesuai.
-5. Klik ```File>Load Flash```, cari folder ```AT89S51-AT89S52\Subpercobaan 1 Kedip``` dan pilih ```arithmatika.hex```
+5. Klik ```File>Load Flash```, cari folder ```AT89S51-AT89S52/Subpercobaan 5 Aritmatika biner pada serial monitor``` dan pilih ```arithmatika.hex```
 6. Klik ```Auto```, maka ProgISP akan melakukan upload kode ke AT89S51/AT89S52.
 7. Buka Device Manager. Lihat Ports (COM & LPT)
 
