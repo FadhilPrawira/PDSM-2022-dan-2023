@@ -24,7 +24,7 @@
 
 3. Buka ProgISP, pastikan _chip_ yang dipilih adalah AT89S51/AT89S52. Klik ```RD``` untuk memastikan AT89S51/AT89S52 sudah tersambung dengan ProgISP.
 4. Jika tampil notifikasi ```Chip Signature doesn't match```, maka kemungkinan salah tipe _chip_. Ganti ke _chip_ yang sesuai.
-5. Klik ```File>Load Flash```, cari folder ```AT89S51-AT89S52\Subpercobaan 1 Kedip``` dan pilih ```p1_7_fix.hex```
+5. Klik ```File>Load Flash```, cari folder ```AT89S51-AT89S52/Subpercobaan 7 Alarm Kebakaran``` dan pilih ```p1_7_fix.hex```
 6. Klik ```Auto```, maka ProgISP akan melakukan upload kode ke AT89S51/AT89S52.
 7. Putar potensiometer mentok ke kiri. LED akan berkedip. 
 8. Putar potensiometer mentok ke kanan dan pencet tombol nomor 0.
