@@ -32,9 +32,13 @@
 |:--:|
 |**Gambar 3. Rangkaian Port0.0**|
 
+|![Percobaan 3 Mikrokontroler AT89S51/AT89S52](/assets/images/p01%20header%20io.jpg)|
+|:--:|
+|**Gambar 4. Rangkaian Header I/O**|
+
 |![Percobaan 3 Mikrokontroler AT89S51/AT89S52](/assets/images/AT89S51-AT89S52/P3-amplifier-realworld.jpeg)|
 |:--:|
-|**Gambar 4. Rangkaian Amplifier Buzzer dengan Transistor PNP S9012**|
+|**Gambar 5. Rangkaian Amplifier Buzzer dengan Transistor PNP S9012**|
 
 
 
