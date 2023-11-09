@@ -38,11 +38,11 @@
 |:--:|
 |**Gambar 1. Percobaan 5 Mikrokontroler AT89S51/AT89S52**|
 
-![Percobaan 5 Mikrokontroler AT89S51/AT89S52](/assets/images/AT89S51-AT89S52/P5-UART-1.png)
+![Percobaan 5 Mikrokontroler AT89S51/AT89S52](/assets/images/AT89S51-AT89S52/P5-UART-1.jpeg)
 |:--:|
 |**Gambar 2. Kabel UART pada sisi mikrokontroler**|
 
-![Percobaan 5 Mikrokontroler AT89S51/AT89S52](/assets/images/AT89S51-AT89S52/P5-UART-2.png)
+![Percobaan 5 Mikrokontroler AT89S51/AT89S52](/assets/images/AT89S51-AT89S52/P5-UART-2.jpeg)
 |:--:|
 |**Gambar 3. Kabel UART pada sisi USB to TTL**|
 
