@@ -20,7 +20,7 @@
 |---|---|
 |Tampil notifikasi `❌ Programmer can not be found.`|Hubungkan USBasp ke komputer dan mikrokontroler yang diinginkan.|
 |Tampil notifikasi `❌ Chip Enable Program Error`|Tipe _chip_ tidak sesuai. Ubah ke tipe _chip_ yang sesuai. Contoh: Awalnya _chip_ yang dipilih ATmega8535, ubah ke AT89S51.|
-|Tampil notifikasi `❌ Chip Signature doesn't match`|Ubah tipe _chip_ ke varian lain yang masih satu famili. Contoh: Awalnya _chip_ yang dipilih AT89S51, ubah ke AT89S52.|
+|Tampil notifikasi `ℹ️ Chip Signature doesn't match`|Ubah tipe _chip_ ke varian lain yang masih satu famili. Contoh: Awalnya _chip_ yang dipilih AT89S51, ubah ke AT89S52.|
 
 4. Klik `File>Load Flash`, cari folder `AT89S51-AT89S52/Subpercobaan 6 Saklar Cepat Tepat` dan pilih `p1_6_fix.hex`
 5. Klik `Auto`, maka ProgISP akan melakukan upload kode ke AT89S51/AT89S52.
