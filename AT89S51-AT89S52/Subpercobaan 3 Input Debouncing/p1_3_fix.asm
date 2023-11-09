@@ -34,7 +34,7 @@ loop:
 ; kondisi tertentu
 ;
 ;--------------------------------------------------------------------------
-; berapa lama? sekitar 1 kali x 255 kali x 255 kali= 65.025 mikrosekon = 65,025 milisekon = 0,065025 detik
+; berapa lama? sekitar 1 kali x 256 kali x 256 kali= 65.536 mikrosekon = 65,536 milisekon = 0,065536 detik
 delay:	mov R0,#01h	; Isi Register R0 dengan 1 (1x ulang)
 delay0:	mov R1,#0ffh	; Isi Register R1 dengan 255 (255x ulang)
 delay1: mov R2, #0ffh	; Isi Register R2 dengan 255 (255x ulang)
