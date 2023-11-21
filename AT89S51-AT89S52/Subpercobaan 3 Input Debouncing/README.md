@@ -35,7 +35,7 @@
 |---|---|
 |Kabel DuPont (menuju resistor di breadboard)|Port A/0 Pin 0 (lihat gambar)|
 |Modul LED (_Active Low_)|Port B/1|
-|Modul _Push Button_|Port C/3|
+|Modul _Push Button_|Port D/3|
 
 |![Percobaan 3 Mikrokontroler AT89S51/AT89S52](/assets/images/AT89S51-AT89S52/P3.jpeg)|
 |:--:|
