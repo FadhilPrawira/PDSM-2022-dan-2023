@@ -16,10 +16,10 @@ Tahun Ajaran 2023/2024 (Agustus 2023-Desember 2024)
 - [ ] Perbaiki petunjuk praktikum agar mudah dipahami peserta. [Referensi](https://youtu.be/xAJcZeq-an0?si=gHEmx-m0uXeCGbuD)
 - [ ] Buat format penilaian tiap praktikum
 - [ ] Buat skema praktikum di Proteus
-- [ ] Gunakan _software_ open source/gratis/tidak bajakan
+- [ ] Gunakan _software open source_/gratis/tidak bajakan
 
 ## Tutorial instalasi software
-Lihat [di sini](https://its.id/m/PDSM2023)
+Lihat [di sini](https://drive.google.com/drive/folders/14g7yWaTXBRPVTHsoXB0hftSB-YMiWIpR?usp=sharing)
 
 ## Praktikum yang dijalankan
 - AT89S51/AT89S52 (Assembly)
@@ -50,8 +50,8 @@ Lihat [di sini](https://its.id/m/PDSM2023)
 ## Perangkat lunak yang dibutuhkan
 - CodeVision AVR [unduh versi bajakan 3.14 untuk Windows 7/8/8.1/10 arsitektur 32/64 bit di sini](https://getintopc.com/softwares/development/codevisionavr-advanced-free-download/)
 - M-IDE Studio for MCS-51 [unduh versi 0.2.5.18 _packed file_ di sini](https://archive.org/download/midepack02518/midepack02518.exe)
-- Arduino IDE [unduh versi 2.2.1 di sini untuk Windows 10 arsitektur 64 bit](https://downloads.arduino.cc/arduino-ide/arduino-ide_2.2.1_Windows_64bit.exe)
-- Putty [unduh Putty versi 0.79 untuk Windows arsitektur 64 bit x86 di sini](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.79-installer.msi) / SdjTerm [unduh SdjTerm di sini](https://github.com/FadhilPrawira/PDSM-2022-dan-2023/blob/main/assets/software/SdjTerm.zip) / RealTerm [unduh RealTerm di sini](https://sourceforge.net/projects/realterm/files/Realterm/)
+- Arduino IDE [unduh versi 2.3.6 di sini untuk Windows 11 arsitektur 64 bit](https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.6_Windows_64bit.exe)
+- Putty [unduh Putty versi 0.83 untuk Windows arsitektur 64 bit x86 di sini](https://the.earth.li/~sgtatham/putty/0.83/w64/putty-64bit-0.83-installer.msi) / SdjTerm [unduh SdjTerm di sini](https://github.com/FadhilPrawira/PDSM-2022-dan-2023/blob/main/assets/software/SdjTerm.zip) / RealTerm [unduh RealTerm di sini](https://sourceforge.net/projects/realterm/files/Realterm/)
 - ProgISP [unduh versi 1.7.2 di sini](https://github.com/FadhilPrawira/PDSM-2022-dan-2023/blob/main/assets/software/Prog%20ISP%201.72.zip)
 - Proteus [unduh versi bajakan 8.13 SP0 untuk Windows 7/8/8.1/10 arsitektur 32/64 bit di sini](https://getintopc.com/softwares/pcb-design/proteus-professional-2021-free-download-5219458/)
 
